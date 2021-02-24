@@ -37,7 +37,7 @@ Swift实现仿知乎日报App
 
 * 一些细节: 
   * 图片模糊效果(ImageBlurView.swift) 效果其实有点难看 原来想做成渐变的效果 但有点难没做出来,,,
-  * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示了0.0
+  * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示效果了0.0
   * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
   * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
 
