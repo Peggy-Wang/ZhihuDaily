@@ -1,16 +1,5 @@
 # ZhihuDaily
-# 简介
 Swift实现仿知乎日报App
-
-* 基础功能展示
-  * 主页面
-  
-
-
-
-
-
-
 
 先说一下没实现的功能:）
 * 主页面banner的滑动分页效果（滑动时会停留在中间）
@@ -21,6 +10,17 @@ Swift实现仿知乎日报App
   
 * 新闻详情页的body部分显示问题
   * body部分不是完整的HTML 无法解析
+
+# 基础功能展示
+  * 主页面
+   * ![image](https://github.com/Peggy-Wang/ZhihuDaily/blob/master/主页面.GIF)
+  * 详情页
+   * ![image](https://github.com/Peggy-Wang/ZhihuDaily/blob/master/详情页.GIF)
+  * 个人页面
+   * ![image](https://github.com/Peggy-Wang/ZhihuDaily/blob/master/个人页面.GIF)
+  * 夜间模式
+   * ![image](https://github.com/Peggy-Wang/ZhihuDaily/blob/master/夜间模式.GIF)
+
 
 
   
