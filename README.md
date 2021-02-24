@@ -6,7 +6,7 @@ Swift实现仿知乎日报App
   * SwiftUI原生的的ScrollView不支持分页效果 需要UIKit中的UIScrollView实现
 
 * 新闻列表对应页面的跳转
-  * 加入全部新闻对应页面跳转时会导致网络请求失败 如果只放几条新闻的话可以实现 推测是url请求次数存在限制 也可能是我的跳转方法有问题 
+  * 加入全部新闻对应页面跳转时会导致网络请求失败 如果只放几条新闻的话可以实现 推测是url请求次数存在限制 也可能是我的跳转方法有问题 没办法我只能先让所有的新闻详情跳转到id为9733310的一篇新闻
   
 * 新闻详情页的body部分显示问题
   * body部分不是完整的HTML 无法解析
@@ -36,8 +36,8 @@ Swift实现仿知乎日报App
 * 个人页面UserPage.swift: 由userData.isLogined控制显示内容 -- true显示用户界面 false显示伪登录界面 用户界面下面的两个按钮(夜间模式, 设置)是不能按的:) 但是实际上是支持夜间模式的 需要手动到系统设置中开启 我不知道要怎么做应用内部开启夜间模式这个功能
 
 * 一些细节: 
-  * 图片模糊效果(ImageBlurView.swift) 效果其实有点难看 原来想做成渐变的效果 但有点难没做出来，，，
-  * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示了0.0 
+  * 图片模糊效果(ImageBlurView.swift) 效果其实有点难看 原来想做成渐变的效果 但有点难没做出来,,,
+  * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示了0.0
   * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
   * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
 
