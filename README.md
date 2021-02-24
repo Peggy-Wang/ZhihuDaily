@@ -29,11 +29,17 @@ Swift实现仿知乎日报App
 
 * 用户数据UserData.swift: 主要数据采用全局环境变量@EnvironmentObject的形式储存 方便不同结构间数据的传输 同时保证数据不会在关闭该页面后丢失 
 
-* 主页面NewsPage.swift: 顶部导航栏模块(NewsNavigationBar.swift) + 头条新闻模块(LatestNewsCell.swift) + 新闻列表模块(NewsCell.swift + NewsListView.swift) 模块化提高可维护性
+* 主页面NewsPage.swift: 顶部导航栏模块(NewsNavigationBar.swift) + 头条新闻模块(LatestNewsCell.swift) + 新闻列表模块(NewsCell.swift + NewsListView.swift) -- 模块化提高可维护性
 
-* 详情页NewsDetailsPage.swift: 新闻显示模块 + 底部导航栏模块(NewsDetailsToolBar.swift + ButtonFeedbackView.swift) -- 其中ButtonFeedbacView.swift负责屏幕中央出现的点赞提示 这里忘记添加收藏的相关提示了0.0 
+* 详情页NewsDetailsPage.swift: 新闻显示模块 + 底部导航栏模块(NewsDetailsToolBar.swift + ButtonFeedbackView.swift)
 
 * 个人页面UserPage.swift: 由userData.isLogined控制显示内容 -- true显示用户界面 false显示伪登录界面 用户界面下面的两个按钮(夜间模式, 设置)是不能按的:) 但是实际上是支持夜间模式的 需要手动到系统设置中开启 我不知道要怎么做应用内部开启夜间模式这个功能
+
+* 一些细节: 
+ * 图片模糊效果(ImageBlurView.swift) 效果其实有点难看 原来想做成渐变的效果 但有点难没做出来，，，
+ * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示了0.0 
+ * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
+ * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
 
 
 
