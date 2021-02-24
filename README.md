@@ -36,10 +36,10 @@ Swift实现仿知乎日报App
 * 个人页面UserPage.swift: 由userData.isLogined控制显示内容 -- true显示用户界面 false显示伪登录界面 用户界面下面的两个按钮(夜间模式, 设置)是不能按的:) 但是实际上是支持夜间模式的 需要手动到系统设置中开启 我不知道要怎么做应用内部开启夜间模式这个功能
 
 * 一些细节: 
- * 图片模糊效果(ImageBlurView.swift) 效果其实有点难看 原来想做成渐变的效果 但有点难没做出来，，，
- * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示了0.0 
- * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
- * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
+  * 图片模糊效果(ImageBlurView.swift) 效果其实有点难看 原来想做成渐变的效果 但有点难没做出来，，，
+  * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示了0.0 
+  * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
+  * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
 
 
 
