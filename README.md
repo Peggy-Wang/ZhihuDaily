@@ -1,7 +1,7 @@
 # ZhihuDaily - SwiftUI试水 
 Swift实现仿知乎日报App - Peggy Wang
 
-先说一下没完善的一些问题:)
+先说一下没完善的一些问题:(
 * 主页面banner的滑动分页效果（滑动时会停留在中间）
   * SwiftUI原生的的ScrollView不支持分页效果 需要UIKit中的UIScrollView实现
 
