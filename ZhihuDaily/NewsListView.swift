@@ -26,7 +26,7 @@ struct NewsListView: View {
                 .frame(width: UIScreen.main.bounds.width, height: 20)
             }
             // MARK: 显示新闻列表
-            List {
+            VStack {
                 ForEach(singleNews.stories, id: \.id) { story in
                     NewsCell(story: story)
                         .listRowInsets(EdgeInsets())
