@@ -1,9 +1,9 @@
 # ZhihuDaily - SwiftUI试水 
 Swift实现仿知乎日报App - Peggy Wang
 
-本来打算这个假期好好学一下Swift 但打完美赛后就一直在摸鱼 很多技术都没学 很多地方还要去完善
+本来打算这个假期好好学一下Swift 但打完美赛后就一直在摸鱼 很多技术都没学 还有很多地方要去完善
 
-先说一下没完善的一些问题:(
+先说一下目前存在的一些问题:(
 * 主页面banner的滑动分页效果（滑动时会停留在中间）
   * SwiftUI原生的的ScrollView不支持分页效果 需要UIKit中的UIScrollView实现
 
@@ -42,7 +42,7 @@ Swift实现仿知乎日报App - Peggy Wang
   * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示效果了0.0
   * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
   * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
-  * 我尝试了去除新闻列表模块的系统自带的分割线 但这线阴魂不散去不掉 
+  * 我尝试了去除新闻列表模块的系统自带的分割线,,,但没用
 
 
 
