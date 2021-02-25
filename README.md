@@ -42,7 +42,7 @@ Swift实现仿知乎日报App - Peggy Wang
   * 屏幕中央出现的点赞提示(ButtonFeedbacView.swift) 使用Timer定时控制显示时间 布局采用ZStack 这里忘记添加收藏的相关提示效果了0.0
   * 日期的获取及相关计算函数(Time.swift) 使用Swift的Date日期数据类型和DateFormatter日期数据格式
   * 生命周期控制采用了最新的SwiftUI App模式 十分的简洁 啥也不用管 告别了复杂的UIKit App Delegate
-  * 2.25: 去除了新闻列表模块的系统自带的分割线(gif中展示的是带有分割线的版本)
+  * 2021.2.25: 去除了新闻列表模块的系统自带的分割线(gif中展示的是带有分割线的版本)
 
 
 
