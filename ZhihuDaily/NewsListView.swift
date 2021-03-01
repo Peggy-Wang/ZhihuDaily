@@ -26,14 +26,14 @@ struct NewsListView: View {
                 .frame(width: UIScreen.main.bounds.width, height: 20)
             }
             // MARK: 显示新闻列表
-            List {
+            VStack {
                 ForEach(singleNews.stories, id: \.id) { story in
                     NewsCell(story: story)
                         .listRowInsets(EdgeInsets())
                 }
             }
             .frame(width: UIScreen.main.bounds.width, height: 660)
-            // MARK: 去除系统自带分割线效果
+            // MARK: 去除系统自带分割线效果(List)
             .onAppear {
                 UITableView.appearance().separatorStyle = .none
                 UITableViewCell.appearance().selectionStyle = .none
