@@ -34,20 +34,29 @@ func loadNewsData(url: URL) -> News {
 
 var newsList: [News] = loadNewsList()
 
-// MARK: 二月：读取近一个月的新闻
+// MARK: 读取近一个月的新闻
 func loadNewsList() -> [News] {
     var someNews = [News]()
-
+    
     for index in 0..<30 {
-        if dateCode() - index > 20210200 {
-            let news = loadNewsData(url: URL(string: "https://news-at.zhihu.com/api/3/news/before/\(dateCode() - index)")!)
-            someNews.append(news)
-        } else {
-            let news = loadNewsData(url: URL(string: "https://news-at.zhihu.com/api/3/news/before/\(20210131 + dateCode() - (20210200 + index))")!)
-            someNews.append(news)
-        }
+        let news = loadNewsData(url: URL(string: "https://news-at.zhihu.com/api/3/news/before/\(date(index: index))")!)
+        someNews.append(news)
     }
     return someNews
+}
+
+// MARK: 计算日期
+func date(index: Int) -> Int {
+    let febDate: Int = 20210228 + dateCode() - 20210300 - index
+    let janDate: Int = 20210131 - (febDate - 20210200)
+    //print("jandate:\(janDate)")
+    if dateCode() - index > 20210300 {
+        return dateCode() - index
+    } else if dateCode() - index > 20210300 - 28 {
+        return febDate
+    } else {
+        return janDate
+    }
 }
 
 
