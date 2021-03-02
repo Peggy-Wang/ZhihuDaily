@@ -45,7 +45,7 @@ func loadNewsList() -> [News] {
     return someNews
 }
 
-// MARK: 计算日期
+// MARK: 计算日期（1月-3月）
 func date(index: Int) -> Int {
     let febDate: Int = 20210228 + dateCode() - 20210300 - index
     let janDate: Int = 20210131 - (febDate - 20210200)
